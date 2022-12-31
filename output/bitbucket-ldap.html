@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="/theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="/theme/pygments/monokai.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="/theme/pygments/monokai.min.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
+
+
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333333">
+
+  <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marcin Cimaszewski Atom">
+
+
+
+ 
+
+<meta name="author" content="Marcin Cimaszewski" />
+<meta name="description" content="Bitbucket is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often. By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS …" />
+<meta name="keywords" content="bitbucket, atlassian, blog">
+
+
+  <meta property="og:site_name" content="Marcin Cimaszewski"/>
+  <meta property="og:title" content="Bitbucket enterprise way - LDAP"/>
+  <meta property="og:description" content="Bitbucket is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often. By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS …"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="/bitbucket-ldap.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2020-01-20 00:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="/author/marcin-cimaszewski.html">
+  <meta property="article:section" content="Bitbucket"/>
+  <meta property="article:tag" content="bitbucket"/>
+  <meta property="article:tag" content="atlassian"/>
+  <meta property="article:tag" content="blog"/>
+  <meta property="og:image" content="">
+
+  <title>Marcin Cimaszewski &ndash; Bitbucket enterprise way - LDAP</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="/">
+      <img src="/theme/img/profile.png" alt="Marcin Cimaszewski" title="Marcin Cimaszewski">
+    </a>
+
+    <h1>
+      <a href="/">Marcin Cimaszewski</a>
+    </h1>
+
+    <p>ALM administrator, CI/CD, Automation passionate</p>
+
+
+
+    <ul class="social">
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/marcincimaszewski"
+           target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-twitter"
+           href="https://twitter.com/mcimasz"
+           target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://www.github.com/marcin93"
+           target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="sc-rss"
+           href="/feeds/all.atom.xml"
+           target="_blank">
+          <i class="fa-solid fa-rss"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+<nav>
+  <a href="/">Home</a>
+
+  <a href="/about.html">About</a>
+  <a href="/archives.html">Archives</a>
+  <a href="/categories.html">Categories</a>
+  <a href="/tags.html">Tags</a>
+
+  <a href="/feeds/all.atom.xml">Atom</a>
+
+</nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="bitbucket-ldap">Bitbucket enterprise way - LDAP</h1>
+    <p>
+      Posted on Mon 20 January 2020 in <a href="/category/bitbucket.html">Bitbucket</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p><a href="https://www.atlassian.com/software/bitbucket/" target="_blank">Bitbucket</a> is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often.</p>
+<p>By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS (hosted within https://bitbucket.org) or Self-Hosted. With self-hosted comes following: “Single server or “data center” version?”</p>
+<p>“Data Center” is suited for international organisations which would get profit from Mirrors.</p>
+<p><img alt="Bitbucket screen" class="zooom" src="/images/bugfix123-bug_remove_extra_padding.png" title="Bitbucket screen"></p>
+<h2>Domain integration</h2>
+<p>Natural element of introducing Bitbucket in bigger company is the tit will be connected with Domain. From domain it will be authenticating user access (in general and for specific project).</p>
+<h3>How to setup LDAP read?</h3>
+<p>Main page to answer that question would be: <a href="https://confluence.atlassian.com/bitbucketserver/connecting-bitbucket-server-to-an-existing-ldap-directory-776640403.html" target="_blank">Connecting Bitbucket Server to an existing LDAP directory</a></p>
+<p>Here beside creating read connection with LDAP would be to setup filter which will prevent user and group flood. By that I mean: </p>
+<ul>
+<li>
+<p>Bitbucket has user access license - therefore it’s good to control who need access? Jane from HR can be most often confused but idea of such app. </p>
+</li>
+<li>
+<p>Groups like distribution lists most often are not needed to be indexed by Bitbucket. </p>
+</li>
+</ul>
+<p>Too open configuration will have impact on application w/o real reason for that. In short: it will be Mistake.</p>
+<h2>Details</h2>
+<p><strong>General configuration</strong></p>
+<p><img alt="Advanced settings" class="zooom" src="/images/advanced_settings.png" title="Advanced settings"></p>
+<p>From general useful options are:</p>
+<ul>
+<li>Nested Groups</li>
+<li>Filter out expired users</li>
+<li>Enable incremental synchronisation</li>
+</ul>
+<p><strong>User settings</strong></p>
+<p><img alt="User settings" class="zooom" src="/images/user_schema_settings.png" title="User settings"></p>
+<p>Important part here is: User Object Filter </p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span>&amp;<span class="p">(</span><span class="nv">objectCategory</span><span class="o">=</span><span class="nv">Person</span><span class="p">)(</span><span class="nv">sAMAccountName</span><span class="o">=*</span><span class="p">)(</span><span class="o">|</span><span class="p">(</span><span class="nv">memberOf</span><span class="o">:</span><span class="mf">1.2</span><span class="o">.</span><span class="mf">840.113556</span><span class="o">.</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">1941</span><span class="o">:=</span><span class="nv">CN</span><span class="o">=</span><span class="nv">Bitbucket_Users_Login</span><span class="p">,</span><span class="nv">OU</span><span class="o">=</span><span class="nv">Groups</span><span class="p">,</span><span class="nv">OU</span><span class="o">=</span><span class="nv">Global</span><span class="p">,</span><span class="nv">DC</span><span class="o">=</span><span class="k">do</span><span class="nv">main</span><span class="p">,</span><span class="nv">DC</span><span class="o">=</span><span class="nv">com</span><span class="p">)))</span><span class="w"></span>
+</code></pre></div>
+
+<p>Above filter out all users which are member of given group - in that case Bitbucket_Users_Login.</p>
+<p><strong>Group settings</strong></p>
+<p><img alt="Group settings" class="zooom" src="/images/group_schema_settings.png" title="Group settings"></p>
+<p>Group Object Filter: </p>
+<div class="highlight"><pre><span></span><code>(&amp;(objectCategory=Group)(extensionAttribute1=syncWithTool=*Bitbucket*))
+</code></pre></div>
+
+<p>Above will fetch all groups with attribute: ‘extensionAttribute1’ set to Bitbucket. Simple way to sync only those groups which were nominated to be used within Bitbucket.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/bitbucket.html">bitbucket</a>
+      <a href="/tag/atlassian.html">atlassian</a>
+      <a href="/tag/blog.html">blog</a>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; 2023 </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+  <span class="footer-separator">|</span>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="/theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p></footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Marcin Cimaszewski ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+</body>
+</html>

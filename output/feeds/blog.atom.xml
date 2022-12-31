@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Marcin Cimaszewski - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2020-01-01T00:00:00+01:00</updated><subtitle>ALM administrator, CI/CD, Automation passionate</subtitle><subtitle>ALM administrator, CI/CD, Automation passionate</subtitle><entry><title>Projects</title><link href="/projects.html" rel="alternate"></link><published>2020-01-01T00:00:00+01:00</published><updated>2020-01-01T00:00:00+01:00</updated><author><name>Marcin Cimaszewski</name></author><id>tag:None,2020-01-01:/projects.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;dolekarzy.pl&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Medical appointment booking system&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/dolekarzy.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / maps&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | OpenStreetMap implenentation on pkt.pl&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.pkt.pl/mapa"&gt;&lt;img alt="img" src="/images/mapa.pkt.pl.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / mobile&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | pkt mobile apps development coordination (Android, iOS)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mobilni.pkt.pl/"&gt;&lt;img alt="img" src="/images/pkt_play.google.com.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / xhtml&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Mobile version - pkt.pl&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/pkt_xhtml_s.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Application rebuilding&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/pkt.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Museum of the …&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;dolekarzy.pl&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Medical appointment booking system&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/dolekarzy.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / maps&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | OpenStreetMap implenentation on pkt.pl&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.pkt.pl/mapa"&gt;&lt;img alt="img" src="/images/mapa.pkt.pl.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / mobile&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | pkt mobile apps development coordination (Android, iOS)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mobilni.pkt.pl/"&gt;&lt;img alt="img" src="/images/pkt_play.google.com.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl / xhtml&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Mobile version - pkt.pl&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/pkt_xhtml_s.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;pkt.pl&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Application rebuilding&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/pkt.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Museum of the History of Polish Jews&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Multimedia prototyping&lt;/p&gt;
+&lt;p&gt;&lt;img alt="img" src="/images/mhzp_pl_284.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Office of Rail Transport&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Machinists Registry of Licenses and Certificates&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://utk.gov.pl"&gt;&lt;img alt="img" src="/images/utk-logo.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Office of Rail Transport&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Supporting System for Railway Transport Office (SWUTK)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://utk.gov.pl"&gt;&lt;img alt="img" src="/images/utk-logo.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Home Karaoke&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Product Owner
+E-commerce platform creation&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.domowekaraoke.pl/sklep"&gt;&lt;img alt="img" src="/images/dk.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Domowe Karaoke&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Product Owner
+Karaoke game production&lt;/p&gt;
+&lt;p&gt;&lt;a href="/images/dk2.png"&gt;&lt;img alt="img" src="/images/dk2.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ksow.pl&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;role: Project manager | Building website for National Rural Network&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ksow.pl/"&gt;&lt;img alt="img" src="/images/ksow.png"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="blog"></category></entry></feed>
