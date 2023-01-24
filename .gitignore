@@ -5,7 +5,8 @@
 
 # Pelican specific
 output/
-pelican*
+pelicanconf.py
+publishconf.py
 tasks.py
 Makefile
 Flex/
