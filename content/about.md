@@ -21,8 +21,10 @@ Jenkins, SonarQube, Artifactory, Klockwork
 Git, Selenium, SVN
 
 **Languages:**
-Natural (Polish, English, German); Programming (Python, Bash)
+Natural (Polish, English, German); Programming (basics: Python, Bash)
 
+## Projects 
+I was taking different roles on projects listed [here](https://cimaszewski.eu/projects.html).
 
 ### Events
 **Speaker**

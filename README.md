@@ -12,6 +12,8 @@ Page based on [Pelican](https://getpelican.com/) (static site generator) and The
 4. ```pelican-quickstart```
 5. ```pelican -r -l``` <- will start pelican and reload on changes
 6. Place articles under ```contetnt/``` 
+7. Run content generation: ```pelican content```
+8. Pages generated and ready to be published are located under: ```output/```
 
 Plugins for **css** optimization have also been used and instead of 70KB! css we have 23KB
 - postcss-cli
