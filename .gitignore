@@ -5,11 +5,6 @@
 
 # Pelican specific
 output/
-pelicanconf.py
-publishconf.py
-tasks.py
-Makefile
-Flex/
 
 # User-specific files
 *.rsuser
