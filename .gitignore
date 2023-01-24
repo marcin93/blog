@@ -5,6 +5,10 @@
 
 # Pelican specific
 output/
+pelican*
+tasks.py
+Makefile
+Flex/
 
 # User-specific files
 *.rsuser
