@@ -8,6 +8,8 @@ FAVICON = '/images/favicons/favicon.ico'
 PATH = 'content'
 PAGE_URL = '../{slug}.html'
 PAGE_SAVE_AS = '../{slug}.html'
+DEFAULT_PAGINATION = 10
+DIRECT_TEMPLATES = ['index', 'blog', 'tags']
 
 BROWSER_COLOR = '#333333'
 PYGMENTS_STYLE = 'monokai'
@@ -29,7 +31,7 @@ DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+#CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -40,7 +42,8 @@ HOME_HIDE_TAGS = True
 MENUITEMS = (
     ('About', '/about.html'),
     ('Projects', '/projects.html'),
-    ('Archives', '/archives.html'),
+    ('Blog', '/blog.html'),
+    #('Archives', '/archives.html'),
     #('Categories', '/categories.html'),
     ('Tags', '/tags.html'),
 )
@@ -55,8 +58,6 @@ SOCIAL = (('mastodon', 'https://mastodon.social/@ves93'),
           ('twitter', 'https://twitter.com/mcimasz'),
           ('github','https://www.github.com/marcin93'),
           ('rss', '/feeds/all.atom.xml'),)
-
-DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

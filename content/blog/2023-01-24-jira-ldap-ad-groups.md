@@ -1,6 +1,5 @@
 Title: Jira - LDAP filter and domain groups configuration
 Date: 2023-01-24
-Category: Jira
 Tags: atlassian, jira
 Slug: jira-ldap-groups
 

@@ -1,6 +1,5 @@
 Title: Bitbucket enterprise way - LDAP
 Date: 2020-01-20
-Category: Bitbucket
 Tags: bitbucket, atlassian, blog
 Slug: bitbucket-ldap
 

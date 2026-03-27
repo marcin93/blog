@@ -46,9 +46,6 @@
     </script>
   {% endif %}
 
-  <div>
-    {{ article.content }}
-  </div>
   <div class="tag-cloud">
     <p>
       {% if article.tags %}
@@ -58,7 +55,11 @@
       {% endif %}
     </p>
   </div>
-
+  
+  <div>
+    {{ article.content }}
+  </div>
+  
   {% if ADD_THIS_ID %}
   <div class="center social-share">
     <p>{{ _('Like this article? Share it with your friends!') }}</p>

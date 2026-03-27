@@ -1,6 +1,5 @@
 Title: Jira - Watched issues as reason for mail flood
 Date: 2020-05-28
-Category: Jira
 Tags: atlassian, jira
 Slug: watched-issues
 

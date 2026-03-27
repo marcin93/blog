@@ -1,6 +1,5 @@
 Title: Bitbucket enterprise way - permission model
 Date: 2020-01-20
-Category: Bitbucket
 Tags: atlassian, bitbucket
 Slug: bitbucket-permission-model
 

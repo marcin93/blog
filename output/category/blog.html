@@ -94,6 +94,12 @@
                 Home
               </a>
             </li>
+            <li>
+              <a target="_self"
+                 href="/../projects.html">
+                Experience
+              </a>
+            </li>
  -->
 
       </ul>
@@ -146,45 +152,122 @@ rel="me"           href="https://mastodon.social/@ves93"
 
   <a href="/about.html">About</a>
   <a href="/projects.html">Projects</a>
-  <a href="/archives.html">Archives</a>
+  <a href="/blog.html">Blog</a>
   <a href="/tags.html">Tags</a>
 
+  <!---
   <a href="/feeds/all.atom.xml">Atom</a>
 
+  -->
 </nav>
 
 
 
 <article>
   <header>
-    <h2><a href="/projects.html">Projects</a></h2>
+    <h2><a href="/certificate-expiry.html">Certificate expiry</a></h2>
     <p>
-      Posted on Wed 01 January 2020 in <a href="/category/blog.html">blog</a>
+      Posted on Fri 27 March 2026 in <a href="/category/blog.html">blog</a>
 
 
     </p>
   </header>
   <div>
-      <div><p>** Atlassian migrations **</p>
-<p>Cloud -&gt; On-Prem
-On-Prem -&gt; Cloud</p>
-<p><strong>dolekarzy.pl</strong></p>
-<p>Medical appointment booking system</p>
-<p><img alt="img" src="/images/dolekarzy.png"></p>
-<p><strong>pkt.pl / maps</strong></p>
-<p>role: Project manager | OpenStreetMap implementation on pkt.pl</p>
-<p><a href="http://www.pkt.pl/mapa"><img alt="img" src="/images/mapa.pkt.pl.png"></a></p>
-<p><strong>pkt.pl / mobile</strong></p>
-<p>role: Project manager | pkt mobile apps development coordination (Android, iOS)</p>
-<p><a href="http://mobilni.pkt.pl/"><img alt="img" src="/images/pkt_play.google.com.png"></a></p>
-<p><strong>pkt.pl / xhtml</strong></p>
-<p>role: Project manager | Mobile version - pkt.pl</p>
-<p><img alt="img" src="/images/pkt_xhtml_s.png"></p>
-<p><strong>pkt.pl</strong></p>
-<p>role: Project …</p></div>
+      <div><p>In world where everything is connected and exposed to internet, interacting with self-signed certificates can be unique experience. </p>
+<p>I'll not explain here how certificated does work but focus on task which is work with such (self-signed - but not limited to those).</p>
+<h1>How to 'get' remote certificate?</h1>
+<h2>Display certificates</h2>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>s_client …</code></pre></div></div>
         <br>
         <a class="btn"
-           href="/projects.html">
+           href="/certificate-expiry.html">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/jira-ldap-groups.html">Jira - LDAP filter and domain groups configuration</a></h2>
+    <p>
+      Posted on Tue 24 January 2023 in <a href="/category/blog.html">blog</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p><strong>Note</strong>
+I'm referring to Jira but those configurations can be used with Confluence or Bitbucket.</p>
+<p><strong>Note 2</strong>
+This concept is relying on users being managed via Active Directory or LDAP</p>
+<p>Jira administration has many aspects and points which can be tuned. One of those is how jira is connected to …</p></div>
+        <br>
+        <a class="btn"
+           href="/jira-ldap-groups.html">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/watched-issues.html">Jira - Watched issues as reason for mail flood</a></h2>
+    <p>
+      Posted on Thu 28 May 2020 in <a href="/category/blog.html">blog</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>Tired with Jira mail flood? Or maybe your Outlook rules are working seamlessly enough to not to disturb you with notifications?</p>
+<p>As Jira administrator I can rant some while on Jira features as well as users forcing their ideas to spam others.</p>
+<p>As jira by default makes you watcher of …</p></div>
+        <br>
+        <a class="btn"
+           href="/watched-issues.html">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/bitbucket-ldap.html">Bitbucket enterprise way - LDAP</a></h2>
+    <p>
+      Posted on Mon 20 January 2020 in <a href="/category/blog.html">blog</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p><a href="https://www.atlassian.com/software/bitbucket/" target="_blank">Bitbucket</a> is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often.</p>
+<p>By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS …</p></div>
+        <br>
+        <a class="btn"
+           href="/bitbucket-ldap.html">
+          Continue reading
+        </a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="/bitbucket-permission-model.html">Bitbucket enterprise way - permission model</a></h2>
+    <p>
+      Posted on Mon 20 January 2020 in <a href="/category/blog.html">blog</a>
+
+
+    </p>
+  </header>
+  <div>
+      <div><p>How to setup permission model?
+As we have discussed connection setup and configuration another important topic to discuss is Permission model.</p>
+<p>By Atlassian design Bitbucket has: Application access, Projects and Repositories. Branch permissions are most often too granular to be covered by IT/general setup.</p>
+<p><img alt="Global permissions" class="zooom" src="/images/bb_global_permissions.png" title="Bitbucket screen"></p>
+<p>Does your company uses open …</p></div>
+        <br>
+        <a class="btn"
+           href="/bitbucket-permission-model.html">
           Continue reading
         </a>
   </div>
@@ -196,7 +279,7 @@ On-Prem -&gt; Cloud</p>
 
 
 <footer>
-<p>&copy; 2023 </p>
+<p>&copy; 2026 </p>
 <p>
 Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
   <span class="footer-separator">|</span>

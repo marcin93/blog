@@ -1,6 +1,5 @@
 Title: Certificate expiry
 Date: 2026-03-27
-Category: Bitbucket
 Tags: certificate, ssl, openssl, blog
 Slug: certificate-expiry
 
