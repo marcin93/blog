@@ -12,7 +12,7 @@ As jira by default makes you watcher of any:
 - commented issue
 - created issue
 
-Knowing above user to "protect" himself can have saved special query in his favourite filters. Speciality of that JQL rely on it's result.
+Knowing above, user to "protect" himself can have saved special query in his favorite filters.
 
 ```sql
 watcher = currentUser() and resolution = Unresolved
