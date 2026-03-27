@@ -11,10 +11,18 @@ Slug: projects
 - Managing External certificate update among internal platform
 - Maintenance (OS, App upgrade)
 
-### Atlassian migrations
+### Atlassian 
 
+#### Migrations
 - Cloud -> On-Prem
 - On-Prem -> Cloud
+
+#### Setup and support
+- Jira (extras: ScriptRunner, JQL)
+- Confluence
+- Bitbucket
+- Bamboo
+- Crowd
 
 ## Projects
 
