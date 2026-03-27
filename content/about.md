@@ -11,11 +11,11 @@ I'm delivering tools and support for customers. Detailed profile can be found on
 
 ## Tools
 
+**DevOps:**
+System Integration, Ansible, AWS, Kubernetes, Jenkins, SonarQube, Artifactory, Klockwork
+
 **Atlassian:** 
 JIRA, Confluence, Bitbucket, Crowd | Cloud and On-Prem
-
-**DevOps:**
-Jenkins, SonarQube, Artifactory, Klockwork
 
 **Other:**
 Git, Selenium, SVN
