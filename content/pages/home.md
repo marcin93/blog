@@ -8,4 +8,6 @@ Kubernetes CKA - in progress...
 
 I've been also working as Project Manager, Scrum Master, Karaoke Game Producer (long story).
 
-I'm delivering tools and support for customers. Detailed profile can be found on [LinkedIn](https://www.linkedin.com/in/marcincimaszewski).
+I'm delivering tools and support for customers. 
+
+Detailed profile can be found on [LinkedIn](https://www.linkedin.com/in/marcincimaszewski).
