@@ -8,7 +8,7 @@ Slug: bitbucket-ldap
 
 By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS (hosted within https://bitbucket.org) or Self-Hosted. With self-hosted comes following: “Single server or “data center” version?”
 
-“Data Center” is suited for international organisations which would get profit from Mirrors.
+“Data Center” is suited for international organizations which would get profit from Mirrors.
 
 ![Bitbucket screen]({static}/images/bugfix123-bug_remove_extra_padding.png "Bitbucket screen"){: class="zooom"}
 
@@ -37,7 +37,7 @@ From general useful options are:
 
 * Nested Groups
 * Filter out expired users
-* Enable incremental synchronisation
+* Enable incremental synchronization
 
 **User settings**
 
