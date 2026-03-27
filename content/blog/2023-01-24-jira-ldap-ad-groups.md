@@ -5,12 +5,12 @@ Tags: atlassian, jira
 Slug: jira-ldap-groups
 
 **Note**
-I'm reffereing to Jira but those configuratoins can be used with Confluence or Bitbucket.
+I'm referring to Jira but those configurations can be used with Confluence or Bitbucket.
 
 **Note 2**
 This concept is relying on users being managed via Active Directory or LDAP
 
-Jira administration has many aspects and points which can be tuned. One of those is how jira is connected to domain/ldap. One of best practicies is to not to multiplicate elements when not needed. In that context Jira should be connected to Domain/LDAP and trough that connection user permissions managed. By doing so Jira Administrator will not recreate LDAP group or create other than Domain groups for local Jira usage.
+Jira administration has many aspects and points which can be tuned. One of those is how jira is connected to domain/ldap. One of best practice is to not to multiplicate elements when not needed. In that context Jira should be connected to Domain/LDAP and trough that connection user permissions managed. By doing so Jira Administrator will not recreate LDAP group or create other than Domain groups for local Jira usage.
 
 Such setup will remove user & group management from Jira System administrator and place it on: Project and LDAP administration.
 
@@ -26,6 +26,6 @@ Now User Directory need to be updated under "Group Object Filter" to be like:
 
 ```extenssionAttribute1=*Jira*``` - (*) in that filter is because we can go one step further and want to use same group among few applications eg: Jira and Confluence. Then Domain attribute can look like: ```extenssionAttribute1=Jira,Confluence,Bitbucket```. Filter will do the job and select only those groups which are matching specified application.
 
-Idea of using group attribute has also another advantage. User Directory can have "Base DN" pointing to top of our AD, like: ```o=example,c=com```, but filter will match and synchronize only those elements which are needed. Maintainers (Active Directory and  Operations) will not need to think "Where group need to be created to make it visible in Jira?" or "Can we move group to different OU?". Grups can be anywhere within AD tree structure and will remain usable for Jira.
+Idea of using group attribute has also another advantage. User Directory can have "Base DN" pointing to top of our AD, like: ```o=example,c=com```, but filter will match and synchronize only those elements which are needed. Maintainers (Active Directory and  Operations) will not need to think "Where group need to be created to make it visible in Jira?" or "Can we move group to different OU?". Groups can be anywhere within AD tree structure and will remain usable for Jira.
 
 Supported by Jira LDAP directories: [Atlassian KB](https://confluence.atlassian.com/adminjiraserver/connecting-to-an-ldap-directory-938847052.html) 
