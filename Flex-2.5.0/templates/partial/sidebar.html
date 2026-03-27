@@ -47,7 +47,7 @@
           {% set pages = pages|sort(attribute=PAGES_SORT_ATTRIBUTE) %}
         {%- endif %}
 
-        {% if DISPLAY_PAGES_ON_MENU %}
+        <!-- {% if DISPLAY_PAGES_ON_MENU %}
           {% for page in pages %}
             <li>
               <a target="{{ get_target(SITEURL) }}"
@@ -56,7 +56,7 @@
               </a>
             </li>
           {% endfor %}
-        {% endif %}
+        {% endif %} -->
 
         {% for name, link in LINKS %}
           <li>

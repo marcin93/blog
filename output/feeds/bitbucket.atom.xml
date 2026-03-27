@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Marcin Cimaszewski - Bitbucket</title><link href="/" rel="alternate"></link><link href="/feeds/bitbucket.atom.xml" rel="self"></link><id>/</id><updated>2020-01-20T00:00:00+01:00</updated><subtitle>ALM administrator, CI/CD, Automation passionate</subtitle><subtitle>ALM administrator, CI/CD, Automation passionate</subtitle><entry><title>Bitbucket enterprise way - LDAP</title><link href="/bitbucket-ldap.html" rel="alternate"></link><published>2020-01-20T00:00:00+01:00</published><updated>2020-01-20T00:00:00+01:00</updated><author><name>Marcin Cimaszewski</name></author><id>tag:None,2020-01-20:/bitbucket-ldap.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.atlassian.com/software/bitbucket/" target="_blank"&gt;Bitbucket&lt;/a&gt; is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Marcin Cimaszewski - Bitbucket</title><link href="/" rel="alternate"/><link href="/feeds/bitbucket.atom.xml" rel="self"/><id>/</id><updated>2020-01-20T00:00:00+01:00</updated><subtitle>ALM Administrator, CI/CD, Automation passionate</subtitle><entry><title>Bitbucket enterprise way - LDAP</title><link href="/bitbucket-ldap.html" rel="alternate"/><published>2020-01-20T00:00:00+01:00</published><updated>2020-01-20T00:00:00+01:00</updated><author><name>Marcin Cimaszewski</name></author><id>tag:None,2020-01-20:/bitbucket-ldap.html</id><summary type="html">&lt;p&gt;&lt;a href="https://www.atlassian.com/software/bitbucket/" target="_blank"&gt;Bitbucket&lt;/a&gt; is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often.&lt;/p&gt;
 &lt;p&gt;By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://www.atlassian.com/software/bitbucket/" target="_blank"&gt;Bitbucket&lt;/a&gt; is tool of choice in many large companies. One reason for that is it has nice integration with other part of ecosystem like Jira - most often.&lt;/p&gt;
 &lt;p&gt;By definition it’s ‘just another git server’. It has server side git and UI. Basic choice here to be taken is: SaaS (hosted within https://bitbucket.org) or Self-Hosted. With self-hosted comes following: “Single server or “data center” version?”&lt;/p&gt;
-&lt;p&gt;“Data Center” is suited for international organisations which would get profit from Mirrors.&lt;/p&gt;
+&lt;p&gt;“Data Center” is suited for international organizations which would get profit from Mirrors.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Bitbucket screen" class="zooom" src="/images/bugfix123-bug_remove_extra_padding.png" title="Bitbucket screen"&gt;&lt;/p&gt;
 &lt;h2&gt;Domain integration&lt;/h2&gt;
 &lt;p&gt;Natural element of introducing Bitbucket in bigger company is the tit will be connected with Domain. From domain it will be authenticating user access (in general and for specific project).&lt;/p&gt;
@@ -25,7 +25,7 @@
 &lt;ul&gt;
 &lt;li&gt;Nested Groups&lt;/li&gt;
 &lt;li&gt;Filter out expired users&lt;/li&gt;
-&lt;li&gt;Enable incremental synchronisation&lt;/li&gt;
+&lt;li&gt;Enable incremental synchronization&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;User settings&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="User settings" class="zooom" src="/images/user_schema_settings.png" title="User settings"&gt;&lt;/p&gt;
@@ -40,7 +40,7 @@
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;(&amp;amp;(objectCategory=Group)(extensionAttribute1=syncWithTool=*Bitbucket*))
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Above will fetch all groups with attribute: ‘extensionAttribute1’ set to Bitbucket. Simple way to sync only those groups which were nominated to be used within Bitbucket.&lt;/p&gt;</content><category term="Bitbucket"></category><category term="bitbucket"></category><category term="atlassian"></category><category term="blog"></category></entry><entry><title>Bitbucket enterprise way - permission model</title><link href="/bitbucket-permission-model.html" rel="alternate"></link><published>2020-01-20T00:00:00+01:00</published><updated>2020-01-20T00:00:00+01:00</updated><author><name>Marcin Cimaszewski</name></author><id>tag:None,2020-01-20:/bitbucket-permission-model.html</id><summary type="html">&lt;p&gt;How to setup permission model?
+&lt;p&gt;Above will fetch all groups with attribute: ‘extensionAttribute1’ set to Bitbucket. Simple way to sync only those groups which were nominated to be used within Bitbucket.&lt;/p&gt;</content><category term="Bitbucket"/><category term="bitbucket"/><category term="atlassian"/><category term="blog"/></entry><entry><title>Bitbucket enterprise way - permission model</title><link href="/bitbucket-permission-model.html" rel="alternate"/><published>2020-01-20T00:00:00+01:00</published><updated>2020-01-20T00:00:00+01:00</updated><author><name>Marcin Cimaszewski</name></author><id>tag:None,2020-01-20:/bitbucket-permission-model.html</id><summary type="html">&lt;p&gt;How to setup permission model?
 As we have discussed connection setup and configuration another important topic to discuss is Permission model.&lt;/p&gt;
 &lt;p&gt;By Atlassian design Bitbucket has: Application access, Projects and Repositories. Branch permissions are most often too granular to be covered by IT/general setup.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Global permissions" class="zooom" src="/images/bb_global_permissions.png" title="Bitbucket screen"&gt;&lt;/p&gt;
@@ -66,4 +66,4 @@ As we have discussed connection setup and configuration another important topic 
 &lt;li&gt;Enabling public access can be removed via admin &lt;BITBUCKET_HOME&gt;/bitbucket.properties file (create the file if it does not exist)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;feature.public.access&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Bitbucket"></category><category term="atlassian"></category><category term="bitbucket"></category></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="Bitbucket"/><category term="atlassian"/><category term="bitbucket"/></entry></feed>

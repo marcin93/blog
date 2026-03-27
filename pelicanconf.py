@@ -2,10 +2,13 @@ AUTHOR = 'Marcin Cimaszewski'
 SITENAME = 'Marcin Cimaszewski'
 #SITEURL = 'https://cimaszewski.eu'
 SITETITLE = 'Marcin Cimaszewski'
-SITESUBTITLE = 'ALM administrator, CI/CD, Automation passionate'
+SITESUBTITLE = 'ALM Administrator, CI/CD, Automation passionate'
 #FAVICON = SITEURL + '/images/favicon.ico'
 FAVICON = '/images/favicons/favicon.ico'
 PATH = 'content'
+PAGE_URL = '../{slug}.html'
+PAGE_SAVE_AS = '../{slug}.html'
+
 BROWSER_COLOR = '#333333'
 PYGMENTS_STYLE = 'monokai'
 
@@ -36,8 +39,9 @@ HOME_HIDE_TAGS = True
 
 MENUITEMS = (
     ('About', '/about.html'),
+    ('Projects', '/projects.html'),
     ('Archives', '/archives.html'),
-    ('Categories', '/categories.html'),
+    #('Categories', '/categories.html'),
     ('Tags', '/tags.html'),
 )
 
@@ -46,7 +50,8 @@ MENUITEMS = (
 #         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('linkedin', 'https://www.linkedin.com/in/marcincimaszewski'),
+SOCIAL = (('mastodon', 'https://mastodon.social/@ves93'),
+          ('linkedin', 'https://www.linkedin.com/in/marcincimaszewski'),
           ('twitter', 'https://twitter.com/mcimasz'),
           ('github','https://www.github.com/marcin93'),
           ('rss', '/feeds/all.atom.xml'),)
