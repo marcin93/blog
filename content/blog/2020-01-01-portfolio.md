@@ -11,7 +11,7 @@ Medical appointment booking system
 
 **pkt.pl / maps**
 
-role: Project manager | OpenStreetMap implenentation on pkt.pl
+role: Project manager | OpenStreetMap implementation on pkt.pl
 
 [![img]({static}/images/mapa.pkt.pl.png)](http://www.pkt.pl/mapa)
 
