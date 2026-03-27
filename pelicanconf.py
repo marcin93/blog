@@ -21,7 +21,7 @@ DEFAULT_LANG = 'en'
 OG_LOCALE = 'en_US'
 LOCALE = 'en_US'
 
-COPYRIGHT_YEAR = 2023
+COPYRIGHT_YEAR = 2026
 
 #STATIC_PATHS = ['extra/custom.css']
 
