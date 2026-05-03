@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; {{ article.title|striptags|escape }}{% endblock %}
+
+{% block content %}
+<article class="article">
+  <header class="article-header">
+    <h1>{{ article.title }}</h1>
+    <div class="article-meta">
+      <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+      {% if article.category %}
+      <span class="article-category">in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></span>
+      {% endif %}
+      {% if article.tags %}
+      <div class="article-tags">
+        {% for tag in article.tags %}
+        <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="article-content">
+    {{ article.content }}
+  </div>
+
+  {% if article.metadata['author'] %}
+  <footer class="article-footer">
+    <p>By {{ article.author }}</p>
+  </footer>
+  {% endif %}
+</article>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; Archives{% endblock %}
+
+{% block content %}
+<article class="page">
+  <header class="page-header">
+    <h1>Archives</h1>
+  </header>
+  <div style="padding: 0 2rem 2rem;">
+    {% for article in dates %}
+    <div style="margin-bottom: 1rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm);">
+      <time style="color: var(--text-muted); font-size: 0.85rem;">{{ article.locale_date }}</time>
+      <h3 style="margin: 0.25rem 0; font-size: 1.1rem;">
+        <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+      </h3>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}

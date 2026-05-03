@@ -1,0 +1,13 @@
+{% if articles_page and articles_page.has_other_pages() %}
+<nav class="pagination" aria-label="Pagination">
+  {% if articles_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ articles_previous_page.url }}" class="pagination-link pagination-prev">&larr; Newer</a>
+  {% endif %}
+
+  <span class="pagination-info">Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}</span>
+
+  {% if articles_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ articles_next_page.url }}" class="pagination-link pagination-next">Older &rarr;</a>
+  {% endif %}
+</nav>
+{% endif %}

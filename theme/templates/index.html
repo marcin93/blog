@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ SITENAME }}</h1>
+    {% if SITESUBTITLE %}
+    <p class="hero-subtitle">{{ SITESUBTITLE }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% if articles_page and articles_page.object_list %}
+<section class="section">
+  <h2 class="section-title">Latest Posts</h2>
+  <div class="post-list">
+    {% for article in articles_page.object_list %}
+    <article class="post-card">
+      <div class="post-card-content">
+        <header>
+          <h3 class="post-card-title">
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+          </h3>
+          <div class="post-meta">
+            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            {% if article.category %}
+            <span class="post-category">{{ article.category }}</span>
+            {% endif %}
+          </div>
+        </header>
+        <div class="post-excerpt">
+          {% if article.summary %}
+            {{ article.summary | striptags | truncate(200) }}
+          {% else %}
+            {{ article.content | striptags | truncate(200) }}
+          {% endif %}
+        </div>
+        <a href="{{ SITEURL }}/{{ article.url }}" class="read-more">Read more &rarr;</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% include "partial/pagination.html" %}
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,8 @@
+{% if MAIN_MENU %}
+<nav class="top-nav" aria-label="Main navigation">
+  <a href="{{ SITEURL }}/" class="nav-link{% if page_name == 'index' %} active{% endif %}">Home</a>
+  {% for title, link in MENUITEMS %}
+  <a href="{{ link }}" class="nav-link{% if output_file == link.lstrip('/') %} active{% endif %}">{{ title }}</a>
+  {% endfor %}
+</nav>
+{% endif %}

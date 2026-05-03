@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %} &ndash; Blog{% endblock %}
+
+{% block content %}
+<div class="page">
+  <header class="page-header">
+    <h1>Blog</h1>
+  </header>
+
+  <div class="post-list" style="padding: 0 2rem 2rem;">
+    {% if dates %}
+      {% for article in dates %}
+      <article class="post-card">
+        <div class="post-card-content">
+          <header>
+            <h3 class="post-card-title">
+              <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+            </h3>
+            <div class="post-meta">
+              <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+              {% if article.category %}
+              <span class="post-category">{{ article.category }}</span>
+              {% endif %}
+              {% if article.tags %}
+              <div class="article-tags" style="margin-left:auto;">
+                {% for tag in article.tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="tag">{{ tag }}</a>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </header>
+          <div class="post-excerpt">
+            {% if article.summary %}
+              {{ article.summary | striptags | truncate(200) }}
+            {% else %}
+              {{ article.content | striptags | truncate(200) }}
+            {% endif %}
+          </div>
+          <a href="{{ SITEURL }}/{{ article.url }}" class="read-more">Read more &rarr;</a>
+        </div>
+      </article>
+      {% endfor %}
+    {% else %}
+      <p>No blog posts yet.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

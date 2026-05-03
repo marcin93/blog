@@ -1,0 +1,61 @@
+<aside class="sidebar">
+  <div class="sidebar-brand">
+    <a href="{{ SITEURL }}/" class="brand-link">
+      {% if FAVICON %}
+      <img src="{{ SITEURL }}{{ FAVICON }}" alt="{{ SITETITLE }}" class="brand-logo">
+      {% else %}
+      <div class="brand-avatar">{{ SITETITLE[0] }}</div>
+      {% endif %}
+      <span class="brand-name">{{ SITETITLE }}</span>
+    </a>
+    {% if SITESUBTITLE %}
+    <p class="brand-tagline">{{ SITESUBTITLE }}</p>
+    {% endif %}
+  </div>
+
+  {% if SOCIAL %}
+  <div class="sidebar-section">
+    <h4 class="sidebar-heading">Connect</h4>
+    <div class="social-links">
+      {% for name, link in SOCIAL %}
+      <a href="{{ link }}" class="social-link" target="_blank" rel="noopener" title="{{ name }}">
+        {% if name == 'rss' %}
+        <i class="fa-solid fa-rss"></i>
+        {% elif name == 'envelope' or name == 'mail' or name == 'email' %}
+        <i class="fa-solid fa-envelope"></i>
+        {% elif name == 'mastodon' %}
+        <i class="fa-brands fa-mastodon"></i>
+        {% else %}
+        <i class="fa-brands fa-{{ name }}"></i>
+        {% endif %}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if tags %}
+  <div class="sidebar-section">
+    <h4 class="sidebar-heading">Tags</h4>
+    <div class="sidebar-tags">
+      {% for tag, articles in tags|sort %}
+      <a href="{{ SITEURL }}/{{ tag.url }}" class="sidebar-tag">{{ tag }} <small>{{ articles|count }}</small></a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if articles and articles|count > 0 %}
+  <div class="sidebar-section">
+    <h4 class="sidebar-heading">Recent Posts</h4>
+    <div class="recent-posts">
+      {% for article in articles[:5] %}
+      <a href="{{ SITEURL }}/{{ article.url }}" class="recent-post-link">
+        <span class="recent-post-title">{{ article.title }}</span>
+        <time class="recent-post-date">{{ article.locale_date }}</time>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</aside>

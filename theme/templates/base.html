@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="{{ AUTHOR }}" />
+  <meta name="description" content="{{ SITEDESCRIPTION or SITENAME }}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  {% if FAVICON %}
+  <link rel="icon" href="{{ SITEURL }}{{ FAVICON }}">
+  {% endif %}
+
+  {% if FEED_ALL_ATOM %}
+  <link href="{{ FEED_DOMAIN or SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed">
+  {% endif %}
+
+  <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+    <i class="fa-solid fa-sun"></i>
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <div class="layout">
+    {% include "partial/sidebar.html" %}
+
+    <main class="main">
+      {% include "partial/nav.html" %}
+
+      {% block content %}{% endblock %}
+
+      {% include "partial/footer.html" %}
+    </main>
+  </div>
+
+  <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/theme.js"></script>
+</body>
+</html>
