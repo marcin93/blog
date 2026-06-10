@@ -1,7 +1,7 @@
 AUTHOR = 'Marcin Cimaszewski'
 SITENAME = 'Marcin Cimaszewski'
 SITETITLE = 'Marcin Cimaszewski'
-SITESUBTITLE = 'Senior Platform Engineer · M&A · R&D'
+SITESUBTITLE = 'Senior ALM Engineer · M&A · R&D'
 SITEURL = ''
 
 FAVICON = '/images/favicons/favicon.ico'
@@ -35,7 +35,6 @@ MAIN_MENU = True
 HOME_HIDE_TAGS = True
 
 MENUITEMS = (
-    ('About', '/about.html'),
     ('Projects', '/projects.html'),
     ('Services', '/services.html'),
     ('Blog', '/blog.html'),

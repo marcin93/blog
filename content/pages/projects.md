@@ -16,18 +16,12 @@ Slug: projects
 * **Focus:** Implementing Codebeamer/MagicDraw in Automotive lifecycle  
 * **Differentiator:** Bridging PM methodologies with DevOps automation  
 
-## Modern Tech Stack & Lab
-
-### CKA Path Project
-*  **Infrastructure:** Production-grade Kubernetes cluster (2 nodes)
-* **Stack:** Ubuntu, Helm, CKA Practice Tests
-
 ## WarsawJS Community Leadership
 * **Founding Member & Organizer:** Building and leading a community of 500+ developers, organizing 20+ technical meetups, managing sponsor relations
 
 ![img]({static}/images/WarsawJS_logo.png)
 
-## Legacy & Project Management
+## Earlier Experience
 
 ### pkt.pl Ecosystem
 * **Role:** Project Manager

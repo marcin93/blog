@@ -3,30 +3,30 @@ Save_as: index.html
 Slug: home
 
 
-I'm a **Senior Platform Engineer** specializing in **Enterprise Toolchains & Application Administration**. 
+I'm a **Senior ALM Engineer** specializing in **Enterprise ALM/SDLC Toolchains** for automotive and R&D organizations. I migrate, consolidate and stabilize engineering platforms - so your teams ship without toolchain fires.
 
-**Current Focus (2026):** 
+**Track record:**
 
-- CKA certification in progress. Scaling expertise into Cloud Native (K8s) and Infrastructure as Code (Ansible/Terraform)
+- Jira Data Center migration - 2,000 users, 900+ projects, zero downtime
+- 5+ post-M&A toolchain consolidations (Qualcomm, Renesas, Dialog)
+- Codebeamer & MagicDraw in Automotive SPICE / ISO 26262 environments
+- HA clusters, certificate management, cross-platform integrations
 
-**Key Expertise:**
+**Available for contract** (Stuttgart / remote) - [ALM Toolchain Health-Check & more](/services.html)
 
-- High-stakes migrations (2000+ users, 900+ projects)
-- M&A infrastructure integrations (Qualcomm, Renesas, Dialog)
-- Compliance automation (ASPICE with Codebeamer/MagicDraw)
-- HA clusters & Integration 
+## Tools
 
-**What I Do:**
+* **ALM / MBSE:** Codebeamer, MagicDraw / Teamwork Cloud, Sparx Enterprise Architect
+* **Atlassian Toolchain:** Jira, Confluence, Bitbucket, Crowd | Cloud and On-Prem | HA Clusters / Load Balanced
+* **DevOps / IaC / Linux:** RHEL/Ubuntu/SUSE, Ansible, AWS, Jenkins, SonarQube, Artifactory, Klockwork
+* **Exposure:** Kubernetes, Helm, Rancher
+* **Other:** Git, SVN, Selenium, SSL Certificates, PostgreSQL, MySQL, Cassandra
+* **Languages:** Natural (Polish, English, German); Programming (Python, Bash)
 
-- Deliver production infrastructure solutions (On-Prem, Cloud)
-- R&D for engineering platform requests
-- Set up HA applications with clustered databases
-- Manage internal/external certificate updates across platforms
-- Maintain OS and application upgrades
+## Community
 
-**Currently Building:**
+**WarsawJS** — Founding Member & Organizer. Community of 500+ developers, 20+ technical meetups. [warsawjs.com](https://warsawjs.com/)
 
-- OpenClaw LLM Gateway (AI model aggregation)
-- Production-grade Kubernetes clusters
+## Links
 
-[View detailed portfolio](/projects/) | [LinkedIn](https://www.linkedin.com/in/marcincimaszewski)
+[Projects & Experience](/projects.html) | [Services](/services.html) | [LinkedIn](https://www.linkedin.com/in/marcincimaszewski)
