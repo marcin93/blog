@@ -37,6 +37,7 @@ HOME_HIDE_TAGS = True
 MENUITEMS = (
     ('About', '/about.html'),
     ('Projects', '/projects.html'),
+    ('Services', '/services.html'),
     ('Blog', '/blog.html'),
     ('Tags', '/tags.html'),
 )
