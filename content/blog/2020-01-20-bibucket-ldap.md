@@ -9,7 +9,7 @@ By definition it’s ‘just another git server’. It has server side git and U
 
 “Data Center” is suited for international organizations which would get profit from Mirrors.
 
-![Bitbucket screen]({static}/images/bugfix123-bug_remove_extra_padding.png "Bitbucket screen"){: class="zooom"}
+![Bitbucket screen]({static}/images/bugfix123-bug_remove_extra_padding.png "Bitbucket screen")
 
 ## Domain integration
 
@@ -30,7 +30,7 @@ Too open configuration will have impact on application w/o real reason for that.
 
 **General configuration**
 
-![Advanced settings]({static}/images/advanced_settings.png "Advanced settings"){: class="zooom"}
+![Advanced settings]({static}/images/advanced_settings.png "Advanced settings")
 
 From general useful options are:
 
@@ -40,7 +40,7 @@ From general useful options are:
 
 **User settings**
 
-![User settings]({static}/images/user_schema_settings.png "User settings"){: class="zooom"}
+![User settings]({static}/images/user_schema_settings.png "User settings")
 
 Important part here is: User Object Filter 
 ```
@@ -51,7 +51,7 @@ Above filter out all users which are member of given group - in that case Bitbuc
 
 **Group settings**
 
-![Group settings]({static}/images/group_schema_settings.png "Group settings"){: class="zooom"}
+![Group settings]({static}/images/group_schema_settings.png "Group settings")
 
 Group Object Filter: 
 ```

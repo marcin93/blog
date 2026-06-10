@@ -8,7 +8,7 @@ As we have discussed connection setup and configuration another important topic 
 
 By Atlassian design Bitbucket has: Application access, Projects and Repositories. Branch permissions are most often too granular to be covered by IT/general setup.
 
-![Global permissions]({static}/images/bb_global_permissions.png "Bitbucket screen"){: class="zooom"}
+![Global permissions]({static}/images/bb_global_permissions.png "Bitbucket screen")
 
 Does your company uses open model? 
 
