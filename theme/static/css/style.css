@@ -120,9 +120,42 @@ code {
 }
 
 pre {
+  position: relative;
   padding: 1rem;
   overflow-x: auto;
   border: 1px solid var(--border);
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.2rem 0.55rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-body);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity var(--transition), color var(--transition), border-color var(--transition);
+}
+
+pre:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.copy-btn.copied {
+  color: #16a34a;
+  border-color: #16a34a;
+  opacity: 1;
 }
 
 pre code {
@@ -779,7 +812,8 @@ main > .top-nav ~ * {
   color: var(--text-primary);
 }
 
-/* Technology Tags inside Projects */
+/* Technology Tags inside Projects / About */
+.page-content h2 ~ ul li strong:first-child,
 .page-content h3 + p strong:first-child,
 .page-content h3 ~ ul li strong:first-child {
   color: var(--accent);
