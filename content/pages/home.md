@@ -8,7 +8,7 @@ I'm a **Senior ALM Engineer** specializing in **Enterprise ALM/SDLC Toolchains**
 **Track record:**
 
 - Jira Data Center migration - 2,000 users, 900+ projects, zero downtime
-- 5+ post-M&A toolchain consolidations (Qualcomm, Renesas, Dialog)
+- 5+ post-M&A toolchain consolidations (Qualcomm CDMA Technologies GmbH, Renesas Electronics, Dialog Semiconductor)
 - Codebeamer & MagicDraw in Automotive SPICE / ISO 26262 environments
 - HA clusters, certificate management, cross-platform integrations
 
