@@ -5,6 +5,7 @@ SITESUBTITLE = 'Senior ALM Engineer · M&A · R&D'
 SITEURL = ''
 
 FAVICON = '/images/favicons/favicon.ico'
+SITELOGO = '/images/profile.png'
 PATH = 'content'
 PAGE_URL = '../{slug}.html'
 PAGE_SAVE_AS = '../{slug}.html'

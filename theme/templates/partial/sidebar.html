@@ -1,7 +1,9 @@
 <aside class="sidebar">
   <div class="sidebar-brand">
     <a href="{{ SITEURL }}/" class="brand-link">
-      {% if FAVICON %}
+      {% if SITELOGO %}
+      <img src="{{ SITEURL }}{{ SITELOGO }}" alt="{{ SITETITLE }}" class="brand-logo">
+      {% elif FAVICON %}
       <img src="{{ SITEURL }}{{ FAVICON }}" alt="{{ SITETITLE }}" class="brand-logo">
       {% else %}
       <div class="brand-avatar">{{ SITETITLE[0] }}</div>
