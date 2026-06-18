@@ -25,7 +25,7 @@ For that idea we already require:
 
 # RPM package build
 
-source: https://developers.redhat.com/articles/2021/05/21/build-your-own-rpm-package-sample-go-program
+source: [https://developers.redhat.com/articles/2021/05/21/build-your-own-rpm-package-sample-go-program](https://developers.redhat.com/articles/2021/05/21/build-your-own-rpm-package-sample-go-program)
 
 On RPM compatible OS install:
 - `rpm-build rpmdevtools systemd-rpm-macros` - main dev tools
@@ -79,9 +79,10 @@ tar -czf hello-world-2.tar.gz hello-world-2
 ```
 
 Source files:
-[hello-world.conf](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.conf "hello-world.conf")
-[hello-world.service](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.service "hello-world.service")
-[hello-world.sh](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.sh "hello-world.sh")
+
+- [hello-world.conf](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.conf "hello-world.conf")
+- [hello-world.service](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.service "hello-world.service")
+- [hello-world.sh](https://github.com/marcin93/rpm_build/blob/main/SOURCES/hello-world-1/hello-world.sh "hello-world.sh")
 
 ## SPEC
 
@@ -112,15 +113,17 @@ Worth to mention is one addition in `%files`
 - `%config(noreplace)` - indicates that the file in the package should be installed with extension .rpmnew if there is already a modified file with the same name on the installed machine. [config](https://rpm-software-management.github.io/rpm/manual/spec.html#config) and [Jon Warbrick: rpm config](https://www.cl.cam.ac.uk/~jw35/docs/rpm_config.html)
 
 Spec file:
-[hello-world.spec](https://github.com/marcin93/rpm_build/blob/main/SPECS/hello-world.spec "hello-world.spec")
+
+- [hello-world.spec](https://github.com/marcin93/rpm_build/blob/main/SPECS/hello-world.spec "hello-world.spec")
 
 ## Extras
 
 As I'm about to use container to create package I'm defining `Dockerfile` and build script: `build.sh`
 
 Extra files:
-[Dockerfile](https://github.com/marcin93/rpm_build/blob/main/Dockerfile "Dockerfile")
-[build.sh](https://github.com/marcin93/rpm_build/blob/main/build.sh "build.sh")
+
+- [Dockerfile](https://github.com/marcin93/rpm_build/blob/main/Dockerfile "Dockerfile")
+- [build.sh](https://github.com/marcin93/rpm_build/blob/main/build.sh "build.sh")
 
 # Build
 
@@ -144,7 +147,7 @@ tree
 
 Due to use of containers, we need to make sure it is running systemd as PID 1. Therefore we need to use modified `rockylinux:9` -> `rockylinux:9-ubi-init` designed to execute multi-service within container.
 
-1. Run `rockylinux:9-ubi-init` with extra parameters to get all required privileges and mount directory with generated rpm
+- Run `rockylinux:9-ubi-init` with extra parameters to get all required privileges and mount directory with generated rpm
 ```bash
 docker run -d \
 --name hello-world \
@@ -155,19 +158,19 @@ docker run -d \
 rockylinux/rockylinux:9-ubi-init
 ```
 
-2. Install package
+- Install package
 ```bash
 docker exec hello-world bash -c "dnf install -y /rpms/hello-world-1-2.el9.noarch.rpm --allowerasing"
 ```
 
 ### Inspect logs
 
-3. Check service
+- Check service
 ```bash
 docker exec hello-world systemctl status hello-world
 ```
 
-4. Check `journalctl`
+- Check `journalctl`
 ```bash
 docker exec hello-world journalctl -u hello-world --no-pager
 ```
@@ -176,7 +179,7 @@ The service status and logs are now visible via `systemctl` and `journalctl`. St
 
 ### Lint the package
 
-5. Verify RPM itself
+- Verify RPM itself
 ```bash
 # access container and install rpmlint
 dnf install rpmlint
@@ -193,13 +196,14 @@ rpm -ql hello-world
 #### What rpmlint actually checks?
 
 > **rpmlint** is a tool for checking common errors in rpm packages. It can be used to test individual packages and spec files before uploading or to check an entire distribution.
-https://linux.die.net/man/1/rpmlint
+[https://linux.die.net/man/1/rpmlint](https://linux.die.net/man/1/rpmlint)
 
-https://rpm-packaging-guide.github.io/#checking-rpms-for-sanity
+[https://rpm-packaging-guide.github.io/#checking-rpms-for-sanity](https://rpm-packaging-guide.github.io/#checking-rpms-for-sanity)
 
 It can be used to verify spec and rpm package itself.
 
-6. Verification & Cleanup
+# Cleanup
+
 ```bash
 docker stop hello-world && docker rm hello-world
 ```
