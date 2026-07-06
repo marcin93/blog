@@ -15,7 +15,7 @@ copy([...document.querySelectorAll('a#video-title')]
 ```
 
 <ol start="5">
-<li>All links are now in you clipboard
+<li>All links are now in your clipboard
   <ol>
   <li>Paste them in any text editor</li>
   </ol>
