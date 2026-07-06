@@ -1,4 +1,4 @@
-Title: How to get all your YT watch later? links
+Title: How to get all your YT watch later links? 
 Date: 2026.07.06
 Tags: automation, js, script, yt, watch-later
 Slug: get-yt-watch-later
