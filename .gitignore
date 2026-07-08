@@ -33,3 +33,5 @@ Thumbs.db
 
 # Memory search (opencode)
 .memsearch/
+
+readme/*.md
