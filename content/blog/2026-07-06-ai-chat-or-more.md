@@ -5,11 +5,11 @@ Slug: ai-chat-or-more
 
 # Intro
 
-We are most familiar with AI and its clients - such as Web and Mobile Apps - yet some users still choose to stay on the first step. This is often due to a lack of time or convenience. Let’s look together at the available options and how to use them.
+Most of us know AI through chat clients and web and mobile apps, yet a lot of people still stay on the first rung. Usually because there is no time, or it just doesn't feel convenient. Let's look at the available options together and how to use them.
 
-By "AI," I mean LLM chat clients like ChatGPT, Claude, or DeepSeek. I will take an everyday user’s perspective on using these systems to gain knowledge or speed up day-to-day work.
+By "AI," I mean LLM chat clients like ChatGPT, Claude, or DeepSeek. I will take an everyday user's perspective on using these systems to gain knowledge or speed up day-to-day work.
 
-We have heard about Copilot, as many companies enable it across other parts of the Microsoft Office suite. From a personal perspective, we have seen or used apps and web clients to check and sometimes work with AI. However, there is usually a next step worth exploring.
+Copilot is familiar, since many companies roll it out across the Microsoft Office suite. Chances are you've tried an app or web client to check something or get a bit of work done with AI. But there is usually a next step worth exploring.
 
 ## Types of AI Work Use Cases
 
@@ -59,7 +59,7 @@ At this level, we can already play with different desktop solutions from AI vend
 
 # Agent AI
 
-Here we reach a deeper level when working with large amounts of data. This level becomes necessary when there is a need for specialized agents for certain tasks. Some agents can read data and inform the user of what can be done—similar to standard chat—while others can have access to user data and create, write, delete files, or even perform system actions. For example, [OpenClaw](https://openclaw.ai/). A great write-up is available in the OpenCode documentation: [Agents](https://opencode.ai/docs/agents/)
+Here we reach a deeper level when working with large amounts of data. This level becomes necessary when there is a need for specialized agents for certain tasks. Some agents can read data and inform the user of what can be done, similar to standard chat, while others can have access to user data and create, write, delete files, or even perform system actions. For example, [OpenClaw](https://openclaw.ai/). A great write-up is available in the OpenCode documentation: [Agents](https://opencode.ai/docs/agents/)
 
 Useful resources at this stage include model comparisons that provide model accuracy for specific tasks as well as cost data.
 

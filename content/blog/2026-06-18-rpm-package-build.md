@@ -15,6 +15,7 @@ Recently I came across topic which was new to me and I've never worked on. Build
 Idea was to build dummy 'app' which will be installed as RPM. Package should install app and service. App need to provide log messages like start, ongoing ping and stop.
 
 For that idea we already require:
+
 - RPM compatible build platform
 	- docker image: `rockylinux:9` and `rockylinux:9-ubi-init`
 - RPM dev tools
@@ -23,11 +24,13 @@ For that idea we already require:
 	- config
 - service
 
+
 # RPM package build
 
 source: [https://developers.redhat.com/articles/2021/05/21/build-your-own-rpm-package-sample-go-program](https://developers.redhat.com/articles/2021/05/21/build-your-own-rpm-package-sample-go-program)
 
 On RPM compatible OS install:
+
 - `rpm-build rpmdevtools systemd-rpm-macros` - main dev tools
 - `rpmdev-setuptree` - will build RPM directory `~/rpmbuild` containing: `BUILD`, `RPMS`, `SOURCES`, `SPECS`, `SRPMS`.
 
@@ -51,19 +54,24 @@ tar -czf hello-world-1.tar.gz hello-world-1
 ```
 
 RPM package does deliver:
+
 - sources (`*.tar.gz`)
 - package signature
 - delta update
 
+
 RPM build does default to rely on archive which is being referred in spec `Source0: %{name}-%{version}.tar.gz` and required by `%setup -q` [Using the %setup macro](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/rpm_packaging_guide/advanced-topics#using-the-setup-macro_more-on-macros) 
 
 The `%setup` macro:
+
 - Ensures that we are working in the correct directory.
 - Removes residues of previous builds.
 - Unpacks the source tarball.
 - Sets up some default privileges.
 
-then I'm adding `-q` flag which limits the verbosity of the `%setup` macro. Only `tar -xof` is executed instead of `tar -xvvof`. 
+
+Then I'm adding `-q` flag which limits the verbosity of the `%setup` macro. Only `tar -xof` is executed instead of `tar -xvvof`. 
+
 This can be replaced by `%autosetup` [autosetup](https://rpm-software-management.github.io/rpm/manual/autosetup.html) which is combining `%setup` and `%patch`  into one.
 
 **Version bump workflow**
