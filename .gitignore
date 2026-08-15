@@ -35,3 +35,5 @@ Thumbs.db
 .memsearch/
 
 readme/*.md
+# venv symlink (local)
+lib64
