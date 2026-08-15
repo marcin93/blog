@@ -33,11 +33,7 @@ For R&D organizations running **Codebeamer, Atlassian (Jira / Confluence / Bitbu
 
 ## Investment
 
-| Scope | Price |
-|---|---|
-| Single platform (Jira DC only) | €3,500 |
-| Full toolchain (Atlassian + Codebeamer + MBSE) | €4,900 |
-| Express mini audit (1 application, 2 days) | €1,800 |
+Fixed scope engagements. Pricing is provided on a short scoping call, matched to your environment and scope.
 
 ---
 

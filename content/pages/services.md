@@ -10,7 +10,7 @@ Which one you need depends on the moment you are in.
 
 Independent technical due diligence for engineering environments, done before the deal closes while it can still change the price. For private equity funds, M&A advisors, and corporate development teams.
 
-From €10,000. [Read more](/ma-due-diligence.html)
+Pricing on request. [Read more](/ma-due-diligence.html)
 
 ---
 
@@ -18,7 +18,7 @@ From €10,000. [Read more](/ma-due-diligence.html)
 
 A fixed scope assessment of your engineering platform today. Risks, stability, upgrade path, and migration readiness. For R&D teams running Codebeamer, Atlassian, Teamwork Cloud, or Sparx EA in regulated or post merger environments.
 
-From €1,800. [Read more](/alm-health-check.html)
+Pricing on request. [Read more](/alm-health-check.html)
 
 ---
 

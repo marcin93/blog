@@ -48,16 +48,7 @@ A written due diligence packet in PDF, sized to your deal. Most engagements fini
 
 ## Investment
 
-Fixed scope engagements. The price depends on the size of the toolchain, the number of systems, and the data volume.
-
-| Scope | Price range |
-|---|---|
-| Single platform diligence (Jira DC or Codebeamer only) | €10,000 to €15,000 |
-| Full toolchain diligence (Atlassian + MBSE + build tooling) | €15,000 to €25,000 |
-| Express pre bid check (one environment, 5 to 7 days) | €6,000 to €9,000 |
-| Ongoing integration advisory after close (retainer) | €5,000 per month |
-
-*Roughly €120 to €250 per hour depending on scope. A day rate often works better for a deal team.*
+Fixed scope engagements. The price depends on the size of the toolchain, the number of systems, and the data volume. Pricing is provided on a short scoping call, so you get a number matched to your deal rather than a table.
 
 ---
 
