@@ -4,65 +4,62 @@ Slug: projects
 
 ## Engineering Infrastructure & Automation
 
-### Enterprise-scale Jira Migration
-* **Challenge:** Migration of 2000+ users and 900+ projects to Data Center infrastructure  
-* **Stack:** RHEL, Python Automation, Jira Plugins
+### Enterprise-scale Jira migration
 
-### M&A Toolchain Integration
-* **Scope:** Consolidating systems post-acquisitions (Qualcomm, Renesas, Dialog)
-* **Stack:** RHEL, Ubuntu, Python for App APIs data synchronization, Ansible/Bash automation scripts, SSL Management  
+Moved 2,000+ users and 900+ projects onto a Jira Data Center setup, built on RHEL with Python automation and Jira plugins. The kind of migration where the plan matters more than the tooling, and you find out which integrations you forgot to map.
 
-### ASPICE Compliance Automation
-* **Focus:** Implementing Codebeamer/MagicDraw in Automotive lifecycle  
-* **Differentiator:** Bridging PM methodologies with DevOps automation  
+### M&A toolchain integration
 
-## WarsawJS Community Leadership
-* **Founding Member & Organizer:** Building and leading a community of 500+ developers, organizing 20+ technical meetups, managing sponsor relations
+Consolidated engineering systems after a run of acquisitions at Qualcomm, Renesas, and Dialog. Data sync across application APIs in Python, plus Ansible and Bash automation and SSL management, so several thousand engineers land in one working environment instead of five drifting ones.
+
+### ASPICE compliance automation
+
+Implemented Codebeamer and MagicDraw in an automotive engineering lifecycle, bridging project management methodology with DevOps automation in a regulated environment.
+
+## WarsawJS community leadership
+
+Co-founded and grew WarsawJS into a community of 500+ developers, running 20+ technical meetups and managing sponsor relations along the way.
 
 ![img]({static}/images/WarsawJS_logo.png)
 
-## Earlier Experience
+## Earlier experience
 
-### pkt.pl Ecosystem
-* **Role:** Project Manager
-* **Deliverables:** Mobile app portal (Android/iOS), OpenStreetMap integration, XHTML mobile framework  
-* **Stack:** PHP, OpenStreetMap
+### pkt.pl ecosystem
+
+**Project Manager.** Shipped a mobile app portal for Android and iOS with OpenStreetMap integration and an XHTML mobile framework, built in PHP.
 
 ![img]({static}/images/pkt.png)
 
 ### Museum of the Polish Jews History
-* **Role:** Project Manager
-* **Deliverables:** Multimedia prototyping
+
+**Project Manager.** Led multimedia prototyping for one of Poland's landmark museum projects.
 
 ![img]({static}/images/mhzp_pl_284.png)
 
 ### Office of Rail Transport
-* **Role:** Project Manager
-* **Deliverables:** Machinists Registry of Licenses and Certificates system
+
+**Project Manager.** Delivered the Machinists Registry of Licenses and Certificates system.
 
 [![img]({static}/images/utk-logo.png)](http://utk.gov.pl)
 
 ### Office of Rail Transport
-* **Role:** Project Manager
-* **Deliverables:** Supporting System for Railway Transport Office (SWUTK)
+
+**Project Manager.** Delivered the Supporting System for the Railway Transport Office (SWUTK).
 
 [![img]({static}/images/utk-logo.png)](http://utk.gov.pl)
 
+### ksow.pl (Government National Rural Network Engagement portal)
 
-### ksow.pl (Goverment National Rural Network Engagement portal)
-* **Role:** Project Manager  
-* **Scope:** Building rural broadband website  
-* **Stack:** TYPO3
+**Project Manager.** Built the rural broadband website on TYPO3.
 
 ![img]({static}/images/ksow.png)
 
 ### E-commerce domowekaraoke.pl
-* **Role:** Product Owner  
-* **Stack:** PHP, Image optimization, AWS S3  
-* **Features:** Create your own Karaoke Set, Payment gateway integration
+
+**Product Owner.** Built a storefront with a "create your own karaoke set" flow and payment gateway integration, on PHP with image optimization and AWS S3.
 
 ![img]({static}/images/dk.png)
 
 ### Domowe Karaoke
-* **Role:** Game Producer  
-* **Deliverables:** Game production - PC/DVD, Purchases, Manufacturing, Contracts, Copy rights, Distribution
+
+**Game Producer.** Took a karaoke game from concept to store shelves: production on PC and DVD, purchasing, manufacturing, contracts, copyright, and distribution.
